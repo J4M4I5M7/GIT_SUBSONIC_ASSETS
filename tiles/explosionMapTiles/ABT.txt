@@ -1,0 +1,15 @@
+Different explosion colors that correlate to the different bomb types.
+
+At first I was thinking Magenta, red, yellow, and orange because they are
+all warm colors. And warm colors will be DANGEROUS in my game.
+
+However...
+I feel magenta and red are too close to each other.
+So, I am going to use
+RED,YELLOW, and orange.
+Or maybe.
+MAGENTA, Yellow, and Orange.
+
+And then... For the 4th, the largest explosion type...
+WHITE.
+
