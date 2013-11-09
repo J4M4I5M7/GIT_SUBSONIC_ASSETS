@@ -1,0 +1,1 @@
+mapRegs are for storing map data for each game.

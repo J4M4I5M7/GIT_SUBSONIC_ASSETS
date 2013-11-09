@@ -1,0 +1,1 @@
+soundRegs are used to control all of the sound associated with the game.

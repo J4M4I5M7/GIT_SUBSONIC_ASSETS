@@ -1,0 +1,1 @@
+skinRegs are assets responsible for changing the visual look of the game.

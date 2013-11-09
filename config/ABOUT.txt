@@ -1,0 +1,4 @@
+Original data does NOT go in CONFIG.
+Only references to the original data.
+This is really for creating configurations and game modes by editing
+what maps, sounds, and other assets will be embedded in the game!
