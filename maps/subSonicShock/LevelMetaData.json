@@ -1,0 +1,44 @@
+{
+   "INTRO_LEVELS" : {
+      "COFFIN_CONTAINMENT_ROOM" : 
+      {
+         "ABOUT" : {
+            "DESIGNERS" : [ "John Mark Isaac Madison" ],
+            "DISP_NAME" : "Coffin Containment Room",
+            "SUMMARY" : [
+               "This level is designed to teach you:",
+               "1: Blocks can be destroyed with your head.",
+               "2: Enemies can destroy the environment."
+            ]
+         },
+         "META" : {}
+      },
+      "DROP_ROOM" : 
+      {
+         "ABOUT" : {
+            "DESIGNERS" : [ "John Mark Isaac Madison" ],
+            "DISP_NAME" : "Drop Room",
+            "SUMMARY" : [
+               "This level is designed to teach you:",
+               "1: You can crouch down through platforms.",
+               "2: Red skulls are instant kill.",
+               "3: Bombs cause chain reactions.",
+               "4: Bombs can create passageways."
+            ]
+         },
+         "META" : {}
+      },
+	  "FLARE_ROOM" : 
+      {
+         "ABOUT" : {
+            "DESIGNERS" : [ "John Mark Isaac Madison" ],
+            "DISP_NAME" : "Flare Room",
+            "SUMMARY" : [
+               "This level is designed to teach you:",
+               "1: Flares can be used to ignite mines"
+            ]
+         },
+         "META" : {}
+      }
+   }
+}
