@@ -22,6 +22,9 @@ package config{
 	//3. SOUND_REG:Assets controlling music and sound effects.
 	public class GameSwitchBoard
 	{
+		/** Game mode for loading assets and maps at runtime. **/
+		public static const GAME_MODE_GAMEDEV50:String = "GAME_MODE_GAMEDEV50";
+		
 		//What this is depends on which line is NON-commented in the imports.
 		//only one line is allowed to be non-commented.
 		public static var modeData:GameReleaseMode;
@@ -38,9 +41,10 @@ package config{
 		{//doStaticInit
 			var tempMode:Mode = new Mode();
 			modeData = new GameReleaseMode();
-			modeData.mapData = tempMode.mapData;
-			modeData.modeName = tempMode.modeName;
-			//modeData.assetData = tempMode.assetData;
+			modeData.mapData   = tempMode.mapData;
+			modeData.modeName  = tempMode.modeName;
+			modeData.assetData = tempMode.assetData;
+			
 			//modeData.soundData = tempMode.soundData;
 			//modeData.fontData  = tempMode.fontData;
 		}//doStaticInit

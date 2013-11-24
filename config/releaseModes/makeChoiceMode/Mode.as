@@ -1,6 +1,7 @@
 package config.releaseModes.makeChoiceMode
 {
 	///--/// MAKE CHOICE GAME MODE: ///--///
+	import assets.makeChoice.MakeChoiceAssetPack;
 	import maps.makeChoice.MiniGameLevelPack;
 	
 	import config.releaseModes.GameReleaseMode;
@@ -15,6 +16,7 @@ package config.releaseModes.makeChoiceMode
 		{
 			this.modeName = "GAME_MODE_MAKECHOICE";
 			this.mapData = new MiniGameLevelPack();
+			this.assetData = new MakeChoiceAssetPack(); 
 		}
 		
 		

@@ -1,0 +1,16 @@
+Each bucket on the enemy can have up to 8 different collision states.
+0-7
+0 = BLACK = no collision
+
+BLACK    == NO COLLISION
+MAGENTA  == INSTANT KILL
+RED      == Attack Damage 100% (The most damage one hit from this enemy can do)
+YELLOW   == Attack Damage 40%
+CYAN     == Attack Damage 20%
+GREEN    == Attack Damage 10%
+BLUE     == Attack Damage 5%
+WHITE    == Attack Damage 0% (No damage. But collision is happening still)
+
+
+WHITE
+

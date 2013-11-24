@@ -1,0 +1,16 @@
+
+AS OF: 2013.11.08:
+Stripped all of the assets folder contents from:
+C:\DEV\FLASH_V2\FV2_CODE\LIBRARIES\JM_GAME_LIBS\flixelBasedGames\subSonicShock\assets
+
+And putting it in here.
+
+This is because I want GIT to manage my assets. And Mercurial to manage my code.
+
+
+//Current Goal:
+1. Get game to operate on an "assetPack"
+   This way, the game's assets can be easily switched out!
+
+shesAhomewrecker.com
+

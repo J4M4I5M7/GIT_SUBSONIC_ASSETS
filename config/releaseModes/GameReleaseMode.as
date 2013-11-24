@@ -1,4 +1,5 @@
 package config.releaseModes{
+	import JM_LIB.configTypes.assetPack.GenericAssetPack;
 	import JM_LIB.helperTypes.LevelRegHelper;
 	
 	//Different configurations of game will be different extentions of GameReleaseMode.
@@ -15,6 +16,9 @@ package config.releaseModes{
 		 *  within my game reg. Eventually I am going to refactor the gameMode constant out of my game registry and
 		 *  totally replace it with the _modeName string in [GameReleaseMode/here]. **/
 		public var modeName:String;
+		
+		/** Used for any asset. Art, Fonts, Sound. May eventually refactor fonts and sound out of this assetData var **/
+		public var assetData:GenericAssetPack;
 		
 	}//package
 }//class

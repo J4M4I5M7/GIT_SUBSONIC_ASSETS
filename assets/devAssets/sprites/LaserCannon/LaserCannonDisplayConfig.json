@@ -1,0 +1,41 @@
+{
+	"about":"MetaData for the lasercannon and how it renders.",
+	
+	"dimData":
+	{
+		"widthInTiles":"6",
+		"heightInTiles":"6",
+		"tilemapTileWidth":"16",
+		"tilemapTileHeight":"16"
+	},
+	
+	"commandList":
+	["SCROLL","WHENSTOP","NEVER","ALWAYS"],
+	
+	"displayStates":
+	[
+		
+		{
+			"ZERO":"ThisIsStateZero",
+			"vis":
+			{
+				"ABOUT":"They show up in the dark. And when light hits, the dissolve.",
+				"GHOSTING":"F",
+				"D":["NORMAL","ALWAYS"],
+				"L":["SCREEN","ALWAYS"],
+				"P":["ADD","ALWAYS"]
+			},
+			"hid":
+			{
+				"ABOUT":"Very cool hidden effect that is subtle. Only see eye when moving. And plasma flare kind of reveals outline.",
+				"GHOSTING":"F",
+				"D":["MULTIPLY","NEVER"],
+				"L":["DARKEN","SCROLL"],
+				"P":["MULTIPLY","ALWAYS"]
+			}
+		}
+		
+	]
+	
+	
+}
