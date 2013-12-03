@@ -30,7 +30,14 @@ package assets.makeChoice
 		[Embed(source = 'ui/VerticalUIBaseBoard_LITUP.png')]      public static var VUI_BASEBOARD_LITUP       :Class;
 		
 		//Sound FX assets:
-		[Embed(source = 'sound/SFX/ClassicExp.mp3')]      public static var EXPLOSION_SFX       :Class;
+		[Embed(source = 'sound/SFX/FreeSFXco/glass_headlight_of_a_car_being_smashed.mp3')]      public static var S_GLASS_BREAK_SFX       :Class;
+		[Embed(source = 'sound/SFX/JumpSet01/JumpLand.mp3')]      public static var LAND_SFX       :Class;
+		[Embed(source = 'sound/SFX/JumpSet01/DeepJump.mp3')]      public static var JUMP_SFX       :Class;
+		[Embed(source = 'sound/SFX/ClassicExp.mp3')]         public static var EXPLOSION_SFX       :Class;
+		[Embed(source = 'sound/SFX/ExpSet02/SExp.mp3')]      public static var S_EXPLOSION_SFX       :Class;
+		[Embed(source = 'sound/SFX/ExpSet02/BExp.mp3')]      public static var B_EXPLOSION_SFX       :Class;
+		[Embed(source = 'sound/SFX/ExpSet02/HExp.mp3')]      public static var H_EXPLOSION_SFX       :Class;
+		[Embed(source = 'sound/SFX/ExpSet02/VExp.mp3')]      public static var V_EXPLOSION_SFX       :Class;
 		
 		//Entrance and exit doors:
 		//Doors for starting and finishing the level.

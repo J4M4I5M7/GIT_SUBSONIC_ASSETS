@@ -7,6 +7,9 @@ package decals
 	{
 		//Embedd all assets:
 		[Embed(source = 'Blood/BloodSpotA5x5.PNG')    ] private static var BLOOD_A :Class;
+		[Embed(source = 'Blood/BloodSpotB6x6.PNG')    ] private static var BLOOD_B :Class;
+		[Embed(source = 'Blood/BloodSpotC7x3.PNG')    ] private static var BLOOD_C :Class;
+		[Embed(source = 'Blood/SplatterSmile7x7.PNG') ] private static var BLOOD_SMILE :Class;
 
 		
 		//Create the BloodAndSplatterPropPack from the embedded Data.
@@ -19,7 +22,11 @@ package decals
 			var p:Function = arr.push;
 			var F:uint = GamePropData.FLOOR;
 			var C:uint = GamePropData.CEILING;
-			p( m(BLOOD_A, 5, 5, C, "BLOOD_A"  ,["GENERIC_ROOM"]) );
+			var A:uint = GamePropData.ANY;
+			p( m(BLOOD_A, 5, 5, A, "BLOOD_A"  , ["GENERIC_ROOM"]) );
+			p( m(BLOOD_B, 6, 6, A, "BLOOD_B"  , ["GENERIC_ROOM"]) );
+			p( m(BLOOD_C, 7, 3, A, "BLOOD_C"  , ["GENERIC_ROOM"]) );
+			p( m(BLOOD_SMILE, 7, 7, A, "BLOOD_SMILE"  , ["GENERIC_ROOM"]) );
 
 			GPropPack.make("BloodPack", arr, ["BLOOD"], this);
 		}
