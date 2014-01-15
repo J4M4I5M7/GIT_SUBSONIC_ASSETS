@@ -1,0 +1,73 @@
+{
+   "commandList" : [ "SCROLL", "WHENSTOP", "NEVER", "ALWAYS" ],
+   "dimData" : {
+      "heightInTiles" : "5",
+      "tilemapTileHeight" : "16",
+      "tilemapTileWidth" : "16",
+      "widthInTiles" : "5"
+   },
+   "displayStates" : [
+      {
+         "ZERO" : "STATE ZERO IS VERTICAL THWOMP",
+         "hid" : {
+            "ABOUT" : "Very cool hidden effect that is subtle. Only see eye when moving. And plasma flare kind of reveals outline.",
+            "D" : [ "MULTIPLY", "NEVER" ],
+            "GHOSTING" : "F",
+            "L" : [ "DARKEN", "SCROLL" ],
+            "P" : [ "MULTIPLY", "ALWAYS" ]
+         },
+         "vis" : {
+            "ABOUT" : "They show up in the dark. And when light hits, the dissolve.",
+            "D" : [ "LIGHTEN", "ALWAYS" ],
+            "GHOSTING" : "T",
+            "L" : [ "DARKEN", "ALWAYS" ],
+            "P" : [ "INVERT", "SCROLL" ]
+         }
+      },
+      {
+         "ONE" : "STATE ONE IS BULLDOZER",
+         "hid" : {
+            "D" : [ "NORMAL", "ALWAYS" ],
+            "GHOSTING" : "F",
+            "L" : [ "ADD", "NEVER" ],
+            "P" : [ "ADD", "NEVER" ]
+         },
+         "vis" : {
+            "D" : [ "NORMAL", "ALWAYS" ],
+            "GHOSTING" : "F",
+            "L" : [ "ADD", "NEVER" ],
+            "P" : [ "ADD", "NEVER" ]
+         }
+      },
+      {
+         "TWO" : "STATE TWO(2)",
+         "hid" : {
+            "D" : [ "ADD", "NEVER" ],
+            "GHOSTING" : "F",
+            "L" : [ "ADD", "WHENSTOP" ],
+            "P" : [ "ADD", "ALWAYS" ]
+         },
+         "vis" : {
+            "D" : [ "ADD", "ALWAYS" ],
+            "GHOSTING" : "F",
+            "L" : [ "ADD", "NEVER" ],
+            "P" : [ "ADD", "ALWAYS" ]
+         }
+      },
+      {
+         "THREE" : "STATE 3",
+         "hid" : {
+            "D" : [ "ADD", "NEVER" ],
+            "GHOSTING" : "F",
+            "L" : [ "ADD", "WHENSTOP" ],
+            "P" : [ "ADD", "ALWAYS" ]
+         },
+         "vis" : {
+            "D" : [ "ADD", "ALWAYS" ],
+            "GHOSTING" : "F",
+            "L" : [ "ADD", "NEVER" ],
+            "P" : [ "ADD", "SCROLL" ]
+         }
+      }
+   ]
+}

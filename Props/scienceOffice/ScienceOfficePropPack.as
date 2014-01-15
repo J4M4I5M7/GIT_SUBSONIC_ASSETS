@@ -24,8 +24,8 @@ package props.scienceOffice
 			var m:Function = GamePropData.make;
 			var arr:Array = new Array();
 			var p:Function = arr.push;
-			var F:uint = GamePropData.FLOOR;
-			var C:uint = GamePropData.CEILING;
+			var F:uint = GamePropData.MUST_TOUCH_FLOOR;
+			var C:uint = GamePropData.MUST_TOUCH_CEILING;
 			var itsJust:String = "It's just an insignificant ";
 			p( m(FAN, 3, 2, C, "CEILING_FAN"  ,["FAN", "GENERIC_ROOM"]              , itsJust + "ceiling fan"  ));
 			p( m(CAB, 1, 2, F, "FILE_CAB"     ,["FILECAB", "OFFICE", "STUDY_ROOM"]  , itsJust + "file cabinent"));
@@ -37,7 +37,7 @@ package props.scienceOffice
 			p( m(TRI, 1, 1, F, "TRIPOD_STOOL" ,["LAB", "GENERIC_ROOM", "STUDY_ROOM"], itsJust + "tripod stool" ));
 			p( m(WAT, 1, 3, F, "WATER_COOLER" ,["OFFICE", "STUDY_ROOM"]             , itsJust + "water cooler" ));
 			
-			GPropPack.make("ScienceOffice", arr, ["SCIENCE_OFFICE"], this);
+			GPropPack.make("ScienceOfficePropPack", arr, ["SCIENCE_OFFICE"], this);
 		}
 		
 	}//class

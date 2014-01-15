@@ -1,0 +1,9 @@
+Atomic Alice Format:
+
+
+1 Screen per level.
+A choice between buttons.
+1 button kills you. 1 button saves you.
+
+GAME ABOUT: Buttons and Bombs.
+

@@ -1,0 +1,3 @@
+Avoid the Button is a game about NOT pressing the button. If you press the button, you will die.
+
+The game is about just standing around and not pressing the button.

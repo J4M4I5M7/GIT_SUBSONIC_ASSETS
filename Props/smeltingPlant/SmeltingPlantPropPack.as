@@ -19,15 +19,15 @@ package props.smeltingPlant
 			var m:Function = GamePropData.make;
 			var arr:Array = new Array();
 			var p:Function = arr.push;
-			var F:uint = GamePropData.FLOOR;
-			var C:uint = GamePropData.CEILING;
+			var F:uint = GamePropData.MUST_TOUCH_FLOOR;
+			var C:uint = GamePropData.MUST_TOUCH_CEILING;
 			//  CLASS  DIMS TOUCH     KEYNAME        CATEGORIES
 			p( m(ELEC, 4, 4, C, "ELECTRIC_SMELTER" , ["MISC"]) );
 			p( m(HANG, 4, 6, F, "HANGING_SMELT_POT", ["MISC"]));
 			p( m(LOCK, 4, 6, F, "LOCK_FURNACE"     , ["COFFIN_CONTAINMENT_ROOM","CREMATORIUM"]));
 			p( m(EGIN, 18, 4, F, "SMELTING_ENGINE"  , ["ENGINE_ROOM"]));
 			
-			GPropPack.make("SmeltingPlant", arr, ["SMELTING_PLANT"], this);
+			GPropPack.make("SmeltingPlantPropPack", arr, ["SMELTING_PLANT"], this);
 		}
 		
 	}//class

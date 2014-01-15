@@ -1,0 +1,8 @@
+Ammo runner is an auto-runner that moves though a scrolling environment moving FORWARD.
+Tap the screen , Click, or Press SPACE, or "UP" to jump.
+
+
+Can Ammo be bombs? I think it can.
+
+
+This game is about dodging explosions.

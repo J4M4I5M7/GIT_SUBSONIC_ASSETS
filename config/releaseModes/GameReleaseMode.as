@@ -1,6 +1,8 @@
 package config.releaseModes{
 	import JM_LIB.configTypes.assetPack.GenericAssetPack;
+	import JM_LIB.configTypes.autoRunnerConfigData.AutoRunnerConfigData;
 	import JM_LIB.helperTypes.LevelRegHelper;
+	import JM_LIB.managers.musicTrackManager.MusicTrackManager;
 	
 	//Different configurations of game will be different extentions of GameReleaseMode.
 	//AssetSwitchBoard will use one of them.
@@ -19,6 +21,14 @@ package config.releaseModes{
 		
 		/** Used for any asset. Art, Fonts, Sound. May eventually refactor fonts and sound out of this assetData var **/
 		public var assetData:GenericAssetPack;
+		
+		/** ADDED:2013.01.07:
+		 *  Used for the music in the game. Will eventually be configured so that it can stream music.
+		 *  Right now, just re-factoring so that music lives in our GIT asset repo instead of our HG code repo. **/
+		public var musicData:MusicTrackManager;
+		
+		/** Is the game an auto-runner? If TRUE, the game will auto-scroll from start door to exit door. **/
+		public var autoRunnerData:AutoRunnerConfigData;
 		
 	}//package
 }//class

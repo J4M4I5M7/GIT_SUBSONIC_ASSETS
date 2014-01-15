@@ -1,0 +1,16 @@
+Auto-Game 900 is a game that plays itself.
+There are no controls. The character simply auto-runs right, then left each time it hits a wall.
+The levels have been designed so that you can beat them without playing.
+
+There are movement presets. 1 or more of those presets beats a level.
+
+Which preset you get depends on a dice roll.
+
+Roll for:
+1. Jumpiness
+2. Speed
+
+Hmm...
+
+Dice roll requires more programming... Maybe no dice roll.
+The fun of the game is watching it play.

@@ -1,0 +1,9 @@
+All Lumen-Lights and Plasma-Lights will be stored as Alpha-Generic-Lights in our REPO.
+The game will the be responsible for adding the proper background color.
+
+
+SOLID BLACK BG == PLASMA-LIGHT (Because plasma is additive, and thus a black BG has no effect) (Adding 0 gets original number)
+SOLID WHITE BG == LUMEN-LIGHT  (Because lumen  is multiplicative, and thus a white BG has no effect. 255 == 100% == 1. Multiply by 1 gets original number.
+
+JOHN MARK ISAAC MADISON:
+2012.12.25. Christmas vacation at cabin.

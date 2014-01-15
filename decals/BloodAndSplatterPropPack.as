@@ -20,12 +20,12 @@ package decals
 			var m:Function = GamePropData.make;
 			var arr:Array = new Array();
 			var p:Function = arr.push;
-			var F:uint = GamePropData.FLOOR;
-			var C:uint = GamePropData.CEILING;
-			var A:uint = GamePropData.ANY;
-			p( m(BLOOD_A, 5, 5, A, "BLOOD_A"  , ["GENERIC_ROOM"]) );
-			p( m(BLOOD_B, 6, 6, A, "BLOOD_B"  , ["GENERIC_ROOM"]) );
-			p( m(BLOOD_C, 7, 3, A, "BLOOD_C"  , ["GENERIC_ROOM"]) );
+			var F:uint = GamePropData.MUST_TOUCH_FLOOR;
+			var C:uint = GamePropData.MUST_TOUCH_CEILING;
+			var A:uint = GamePropData.MUST_TOUCH_ANYORNONE;
+			p( m(BLOOD_A,     5, 5, A, "BLOOD_A"  , ["GENERIC_ROOM"]) );
+			p( m(BLOOD_B,     6, 6, A, "BLOOD_B"  , ["GENERIC_ROOM"]) );
+			p( m(BLOOD_C,     7, 3, A, "BLOOD_C"  , ["GENERIC_ROOM"]) );
 			p( m(BLOOD_SMILE, 7, 7, A, "BLOOD_SMILE"  , ["GENERIC_ROOM"]) );
 
 			GPropPack.make("BloodPack", arr, ["BLOOD"], this);

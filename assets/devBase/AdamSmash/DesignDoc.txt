@@ -1,0 +1,8 @@
+Adam Smash is an auto-runner where you travel UP screen.
+The character auto-matically moves LEFT and RIGHT each time it hits a wall.
+
+
+THIS GAME IS ABOUT: BASHING BLOCKS.
+
+
+Will be compatible with PHONES because you will be able to click the screen to make you jump.

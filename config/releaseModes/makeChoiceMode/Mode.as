@@ -7,6 +7,8 @@ package config.releaseModes.makeChoiceMode
 	import config.releaseModes.GameReleaseMode;
 	import JM_LIB.helperTypes.LevelRegHelper;
 	
+	//Music Manager for MakeChoice Game Mode:
+	import music.makeChoice.GameSpecificMusicManager;
 	
 	
 	public class Mode extends GameReleaseMode
@@ -14,9 +16,10 @@ package config.releaseModes.makeChoiceMode
 
 		public function Mode()
 		{
-			this.modeName = "GAME_MODE_MAKECHOICE";
-			this.mapData = new MiniGameLevelPack();
+			this.modeName  = "GAME_MODE_MAKECHOICE";
+			this.mapData   = new MiniGameLevelPack();
 			this.assetData = new MakeChoiceAssetPack(); 
+			this.musicData = new GameSpecificMusicManager();
 		}
 		
 		

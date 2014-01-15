@@ -6,8 +6,8 @@ package config{
 
 	//import config.releaseModes.subSonicShockMode.Mode;//MAIN GAME that may take a few years to finish. (quote:2013.10.24)
 	//import config.releaseModes.buttonBunnyMode.Mode;  //Cute version of make-choice.
-	//import config.releaseModes.makeChoiceMode.Mode ;  //Make choice game mode.
-	import config.releaseModes.devMode.Mode; //dev level loader mode.
+	import config.releaseModes.makeChoiceMode.Mode ;  //Make choice game mode.
+	//import config.releaseModes.devMode.Mode; //dev level loader mode.
 	
 	///--///^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^///--///
 	///--/// CHOOSE ONLY ONE TO BE UN-COMMENTED: ///--///
@@ -22,7 +22,12 @@ package config{
 	//3. SOUND_REG:Assets controlling music and sound effects.
 	public class GameSwitchBoard
 	{
-		/** Game mode for loading assets and maps at runtime. **/
+		/** Game mode for loading assets and maps at runtime.
+		 *  THOUGHT:2013.12.20:
+		 *  Thought: You need to re-factor the game so that the game-mode has no bearing on the behavior
+		 *  of the game. Keep the game mode string for debugging purposes, but rather than have
+		 *  the game mode be used as a flag for dynamic loading of assets...
+		 *  The flag for that should simply be: areAssetsDynamicallyLoaded:Boolean = true/false **/
 		public static const GAME_MODE_GAMEDEV50:String = "GAME_MODE_GAMEDEV50";
 		
 		//What this is depends on which line is NON-commented in the imports.
@@ -44,6 +49,7 @@ package config{
 			modeData.mapData   = tempMode.mapData;
 			modeData.modeName  = tempMode.modeName;
 			modeData.assetData = tempMode.assetData;
+			modeData.musicData = tempMode.musicData;
 			
 			//modeData.soundData = tempMode.soundData;
 			//modeData.fontData  = tempMode.fontData;
