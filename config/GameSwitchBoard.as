@@ -6,8 +6,8 @@ package config{
 
 	//import config.releaseModes.subSonicShockMode.Mode;//MAIN GAME that may take a few years to finish. (quote:2013.10.24)
 	//import config.releaseModes.buttonBunnyMode.Mode;  //Cute version of make-choice.
-	import config.releaseModes.makeChoiceMode.Mode ;  //Make choice game mode.
-	//import config.releaseModes.devMode.Mode; //dev level loader mode.
+	//import config.releaseModes.makeChoiceMode.Mode ;  //Make choice game mode.
+	import config.releaseModes.devMode.Mode; //dev level loader mode.
 	
 	///--///^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^///--///
 	///--/// CHOOSE ONLY ONE TO BE UN-COMMENTED: ///--///
