@@ -1,0 +1,14 @@
+{
+   "decalData" : {
+      "id" : "0",
+      "tx" : 3,
+      "ty" : 5
+   },
+   "textStamp" : {
+      "ht" : 3,
+      "text" : "[tx,ty] = tile origin. [wt,ht] = dims in tiles.",
+      "tx" : 0,
+      "ty" : 0,
+      "wt" : 3
+   }
+}

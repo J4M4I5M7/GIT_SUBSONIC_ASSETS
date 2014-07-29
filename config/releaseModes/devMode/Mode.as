@@ -2,9 +2,13 @@ package config.releaseModes.devMode
 {//package
 	///--/// Dev Level Loader Mode: ///--///
 
+	import com.mochiBot.MochiBot;
+	import com.mochiBot.MyMochiBotList;
+	import JM_LIB.configTypes.botData.BotTrackerData;
 	
 	import config.releaseModes.GameReleaseMode;
 	import JM_LIB.helperTypes.LevelRegHelper;
+	import JM_LIB.configTypes.basicRegData.BasicRegData;
 	
 	//Temporary until we get music loading at runtime into game:
 	import music.makeChoice.GameSpecificMusicManager;
@@ -27,8 +31,28 @@ package config.releaseModes.devMode
 			//Will eventually be set to null after we implement loading music from folder when in Dev Mode.
 			this.musicData = new GameSpecificMusicManager();
 			
+			this.botData = setupBotData();
+			this.basicData = setupBasicData();
+			
 			CONFIG::debug{ trace("ready!"); }
 		};
+		
+		private function setupBotData():BotTrackerData
+		{
+			var out:BotTrackerData = new BotTrackerData();
+			out.mochi = MyMochiBotList.getBotData( "MyFirstMochiBot" );
+			return out;
+		}
+		
+		private function setupBasicData():BasicRegData
+		{
+			var out:BasicRegData = new BasicRegData();
+			out.GAME_HIG = 480;
+			out.GAME_WID = 480;
+			out.FPS = 30;
+			out.SPEED_MULTIPLIER = 30;
+			return out;
+		}
 	
 	}//class
 }//package

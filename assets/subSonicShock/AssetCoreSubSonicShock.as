@@ -30,7 +30,14 @@ package assets.subSonicShock
 		[Embed(source = 'ui/VerticalUIBaseBoard_LITUP.png')]      public static var VUI_BASEBOARD_LITUP       :Class;
 		
 		//Sound FX assets:
-		[Embed(source = 'sound/SFX/ClassicExp.mp3')]      public static var EXPLOSION_SFX       :Class;
+		[Embed(source = 'sound/SFX/FreeSFXco/glass_headlight_of_a_car_being_smashed.mp3')]      public static var S_GLASS_BREAK_SFX       :Class;
+		[Embed(source = 'sound/SFX/JumpSet01/JumpLand.mp3')]      public static var LAND_SFX       :Class;
+		[Embed(source = 'sound/SFX/JumpSet01/DeepJump.mp3')]      public static var JUMP_SFX       :Class;
+		[Embed(source = 'sound/SFX/ClassicExp.mp3')]         public static var EXPLOSION_SFX       :Class;
+		[Embed(source = 'sound/SFX/ExpSet02/SExp.mp3')]      public static var S_EXPLOSION_SFX       :Class;
+		[Embed(source = 'sound/SFX/ExpSet02/BExp.mp3')]      public static var B_EXPLOSION_SFX       :Class;
+		[Embed(source = 'sound/SFX/ExpSet02/HExp.mp3')]      public static var H_EXPLOSION_SFX       :Class;
+		[Embed(source = 'sound/SFX/ExpSet02/VExp.mp3')]      public static var V_EXPLOSION_SFX       :Class;
 		
 		//Entrance and exit doors:
 		//Doors for starting and finishing the level.
@@ -99,6 +106,21 @@ package assets.subSonicShock
 		
 		public static var expTilePack:ExplosionTileSetPack = new ExplosionTileSetPack();
 		
+		
+		//embedding lighting presets:
+		[Embed(source = 'json/lightPresets/BlueJetsAndGreenBG.json'   , mimeType = "application/octet-stream")]public static var  JLIGHT_BlueJetsAndGreenBG   :Class;
+		[Embed(source = 'json/lightPresets/CreeperDark.json'          , mimeType = "application/octet-stream")]public static var  JLIGHT_CreeperDark          :Class;
+		[Embed(source = 'json/lightPresets/DangerousDarkHaze.json'    , mimeType = "application/octet-stream")]public static var  JLIGHT_DangerousDarkHaze    :Class;
+		[Embed(source = 'json/lightPresets/FoggyProblems.json'        , mimeType = "application/octet-stream")]public static var  JLIGHT_FoggyProblems        :Class;
+		[Embed(source = 'json/lightPresets/GhostyStrobe.json'         , mimeType = "application/octet-stream")]public static var  JLIGHT_GhostyStrobe         :Class;
+		[Embed(source = 'json/lightPresets/MintLightRedBG.json'       , mimeType = "application/octet-stream")]public static var  JLIGHT_MintLightRedBG       :Class;
+		[Embed(source = 'json/lightPresets/NeonDerthal.json'          , mimeType = "application/octet-stream")]public static var  JLIGHT_NeonDerthal          :Class;
+		[Embed(source = 'json/lightPresets/SupaGreenWDarkGreenBG.json', mimeType = "application/octet-stream")]public static var  JLIGHT_SupaGreenWDarkGreenBG:Class;
+		[Embed(source = 'json/lightPresets/SuperBluePlasma.json'      , mimeType = "application/octet-stream")]public static var  JLIGHT_SuperBluePlasma      :Class;
+		[Embed(source = 'json/lightPresets/SuperGlowBombsGBG.json'    , mimeType = "application/octet-stream")]public static var  JLIGHT_SuperGlowBombsGBG    :Class;
+		[Embed(source = 'json/lightPresets/LightFriendlyFogOfWar.json'    , mimeType = "application/octet-stream")]public static var  JLIGHT_LightFriendlyFogOfWar    :Class;
+		//
+
 		//helper shorthand vars.
 		private static var m:Function;
 		private static var w:int = TILE_WIDTH;

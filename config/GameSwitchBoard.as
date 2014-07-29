@@ -34,6 +34,10 @@ package config{
 		//only one line is allowed to be non-commented.
 		public static var modeData:GameReleaseMode;
 		
+		/** Added for debugging purposes. Seem not to be able to set break points reliably on static initializers. **/
+		public static var hasInitBegun   :Boolean = false;
+		public static var hasInitFinished:Boolean = false;
+		
 		{//static init
 			doStaticInit();
 		}//static init
@@ -44,15 +48,21 @@ package config{
 		//built game.
 		private static function doStaticInit():void
 		{//doStaticInit
+			hasInitBegun = true;
+			
 			var tempMode:Mode = new Mode();
 			modeData = new GameReleaseMode();
 			modeData.mapData   = tempMode.mapData;
+			modeData.mapMeta   = tempMode.mapMeta; //<<Meta data files and such associated with loaded maps.
 			modeData.modeName  = tempMode.modeName;
 			modeData.assetData = tempMode.assetData;
 			modeData.musicData = tempMode.musicData;
+			modeData.botData   = tempMode.botData;
+			modeData.basicData = tempMode.basicData;
 			
 			//modeData.soundData = tempMode.soundData;
 			//modeData.fontData  = tempMode.fontData;
+			hasInitFinished = true;
 		}//doStaticInit
 		
 		//DEV note on organization:

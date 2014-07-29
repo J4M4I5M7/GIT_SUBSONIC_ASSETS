@@ -1,5 +1,7 @@
-package music.makeChoice 
+package music.devBase.AtomicAlice 
 {
+	//package was originally music.makeChoice
+	
 	import music.makeChoice.MusicCore;
 	import JM_LIB.managers.musicTrackManager.MusicTrackManager;
 	import JM_LIB.managers.musicTrackManager.MusicTrackPack;

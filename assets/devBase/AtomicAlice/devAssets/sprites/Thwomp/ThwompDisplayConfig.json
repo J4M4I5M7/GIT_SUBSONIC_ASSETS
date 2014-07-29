@@ -68,6 +68,21 @@
             "L" : [ "ADD", "NEVER" ],
             "P" : [ "ADD", "SCROLL" ]
          }
+      },
+      {
+         "FOUR" : "CeilingSlicerState",
+         "hid" : {
+            "D" : [ "ADD", "NEVER" ],
+            "GHOSTING" : "F",
+            "L" : [ "ADD", "WHENSTOP" ],
+            "P" : [ "ADD", "ALWAYS" ]
+         },
+         "vis" : {
+            "D" : [ "ADD", "ALWAYS" ],
+            "GHOSTING" : "F",
+            "L" : [ "ADD", "NEVER" ],
+            "P" : [ "ADD", "SCROLL" ]
+         }
       }
    ]
 }

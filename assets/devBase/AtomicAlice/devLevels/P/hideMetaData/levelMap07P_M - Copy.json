@@ -1,0 +1,21 @@
+{
+   "decalData" : {
+      "id" : "107",
+      "tX" : 0,
+      "tY" : 0
+   },
+   "eventData" : {
+      "nameID" : "TheEventIDHere",
+      "tX" : 1,
+      "tY" : 2,
+      "x2" : 3,
+      "y2" : 4
+   },
+   "textStamp" : {
+      "lines" : [ "Hello World." ],
+      "tH" : 4,
+      "tW" : 3,
+      "tX" : 6,
+      "tY" : 7
+   }
+}

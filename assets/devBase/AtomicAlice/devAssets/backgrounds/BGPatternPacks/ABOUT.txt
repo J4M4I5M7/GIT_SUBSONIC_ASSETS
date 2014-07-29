@@ -1,0 +1,7 @@
+These are the packages that contain pre-designed tile-based backgrounds.
+The dimensions of the .PNG signify the width and height in tiles of the backgrounds
+stored within the PNG pack.
+
+Each .PNG file contains 24 backgrounds.
+This is because I am bit-packing 24 bit-arrays into the PNG file.
+Since the color of RBG is 24 bit, I have 24 bit masks.

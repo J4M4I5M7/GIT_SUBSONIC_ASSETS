@@ -1,0 +1,38 @@
+{
+   "BGCOLOR" : {
+      "a" : 130,
+      "b" : 153,
+      "g" : 99,
+      "r" : 102
+   },
+   "DARKLUMEN" : {
+      "a" : 107,
+      "b" : 195,
+      "blendMode" : "multiply",
+      "darkAdderBlend" : "normal",
+      "g" : 197,
+      "r" : 194
+   },
+   "DARKPLASMA" : {
+      "a" : 139,
+      "b" : 0,
+      "blendMode" : "add",
+      "darkAdderBlend" : "normal",
+      "g" : 0,
+      "r" : 0
+   },
+   "DRAWORDER" : {
+      "LAYERORDER" : [
+         "LUMENLIGHT_LAYER",
+         "BOMB_BOMBSPRITE_LAYER",
+         "BUTTONS_LAYER",
+         "TILE_MAP_LAYER",
+         "PLASMALIGHT_LAYER",
+         "BOMB_EXPLOSIONFIRE_LAYER",
+         "PLAYER_LAYER"
+      ]
+   },
+   "TILEMAPDATA" : {
+      "mapBlendMode" : "normal"
+   }
+}

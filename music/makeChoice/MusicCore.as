@@ -10,7 +10,13 @@ package music.makeChoice
 	{
 		//IvardenSphere_BoneDance
 		//[Embed(source = "mp3/RaveOnAHouseBoat_OnlineConvert.mp3")] 	public static var Rave:Class;
-		[Embed(source="mp3/IvardenSphere_BoneDance.mp3")] 	public static var Rave:Class;
+		//[Embed(source="mp3/IvardenSphere_BoneDance.mp3")] 	public static var Rave:Class;
+		
+		//Tylers loading music:
+		//[Embed(source = "mp3/creepyloadingmusic.mp3")] 	public static var Rave:Class;
+		
+		//Tyler's FlatFoot:
+		[Embed(source="mp3/Ravey03.mp3")] 	public static var Rave:Class;
 		
 	}//class
 }//package

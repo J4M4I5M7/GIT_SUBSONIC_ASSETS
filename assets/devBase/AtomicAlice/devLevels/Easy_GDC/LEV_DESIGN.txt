@@ -1,0 +1,22 @@
+
+This folder of levels:
+
+Is arranged so that there are 4 clusters/chunks of levels that can be played in any order by someone who has never ever played our game before:
+
+The chunks of levels are designed to teach:
+
+1. 4 way slow bomb behavior.
+2. skull bomb behavior.
+3. vertical bomb behavior.
+4. horizontal bomb behavior.
+
+All chunks should stand alone. Meaning we can give ANY of these 4 chunks to a playtester,
+and they will figure out the mechanics.
+
+We are focusing MINIMALISTICALLY.
+So only INDIGO_TITANIUM and TEAL_VENTS for our geometry.
+Because these types do NOT move and are indestructable.
+
+Even though I want the game to be about DESTRUCTABLE stuff...
+We need to introduce the BOMBS first. AND THEN introduce destructable tiles
+AFTER the player understands the behavior of all the bombs.

@@ -1,0 +1,88 @@
+{
+   "meta" : {
+      "00" : {
+         "decalData" : {
+            "id" : "0",
+            "tx" : 3,
+            "ty" : 5
+         },
+         "textStamp" : {
+            "ht" : 3,
+            "text" : "ZERO-ZERO",
+            "tx" : 0,
+            "ty" : 0,
+            "wt" : 3
+         }
+      },
+      "01" : {
+         "decalData" : {
+            "id" : "0",
+            "tx" : 3,
+            "ty" : 5
+         },
+         "textStamp" : {
+            "ht" : 3,
+            "text" : "ZERO ONE == 01",
+            "tx" : 0,
+            "ty" : 0,
+            "wt" : 3
+         }
+      },
+      "02" : {
+         "decalData" : {
+            "id" : "0",
+            "tx" : 3,
+            "ty" : 5
+         },
+         "textStamp" : {
+            "ht" : 3,
+            "text" : "02 02 02 02",
+            "tx" : 0,
+            "ty" : 0,
+            "wt" : 3
+         }
+      },
+      "03" : {
+         "decalData" : {
+            "id" : "0",
+            "tx" : 3,
+            "ty" : 5
+         },
+         "textStamp" : {
+            "ht" : 3,
+            "text" : "TextStamp test text for levelMap03!",
+            "tx" : 0,
+            "ty" : 0,
+            "wt" : 3
+         }
+      },
+      "04" : {
+         "decalData" : {
+            "id" : "0",
+            "tx" : 3,
+            "ty" : 5
+         },
+         "textStamp" : {
+            "ht" : 3,
+            "text" : "OW-FOUR",
+            "tx" : 0,
+            "ty" : 0,
+            "wt" : 3
+         }
+      },
+      "05" : {
+         "decalData" : {
+            "id" : "0",
+            "tx" : 3,
+            "ty" : 5
+         },
+         "textStamp" : {
+            "ht" : 3,
+            "text" : "O-FIVE",
+            "tx" : 0,
+            "ty" : 0,
+            "wt" : 3
+         }
+      }
+   }
+}

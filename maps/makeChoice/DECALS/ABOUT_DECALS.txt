@@ -1,0 +1,30 @@
+
+
+Decals must be divisible by the size of the tiles in game.
+Atomic Alice uses 16x16 tiles. So if these decal .PNG files are for
+Atomic Alice, they must be divisible by 16 on the width and height.
+
+Decals must be named:
+LevelDecal_0001 - LevelDecal_9999
+Decals are in a decal folder, rather than in level folder because
+a decal can be RE-USED for other levels.
+
+Each level set has a .JSON file called:
+LevelMetaData_I  (intro levels meta data)
+LevelMetaData_T  (TWITCH levels meta data) Twitch may end up with the external display name of "RUSH" in the final game.
+LevelMetaData_P  (PUZZLE levels meta data)
+LevelMetaData_H  (HELL levels meta data)
+LevelMetaData_E  (EASY levels meta data)
+LevelMetaData_   (Default meta data. Hence nothing after the underscore)
+
+
+Decals will be loaded into the game similiarily to levels.
+Rather than being loaded like assets.
+This being because of the more flexible nature of how many decals we will need.
+
+Use another instance of the same type of object that loads PNG levels to load the DECAL information.
+Except... Use the sub-class (base-class) of that object.
+Because we want the decal list to be universal.
+We don't want a HARD decal list. an EASY decal list. ETC.
+We just want ONE decal list, and then meta data for hard,easy,twitch levels that points to that data to be
+displayed.

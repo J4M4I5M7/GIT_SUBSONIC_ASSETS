@@ -13,12 +13,32 @@ package assets.makeChoice
 		private static var TILE_WIDTH:int = 16;
 		private static var TILE_HEIGHT:int = 16;
 		
+		//the SNES cart icon that is used to create animated gif in game:
+		[Embed(source = 'ui/SNES_CART.PNG')]      public static var SNES_CART       :Class;
+		
+		//Alice's explosion animation!!!
+		[Embed(source = 'sprites/AliceExplodes.PNG')]      public static var ALICE_EXPLODES       :Class;
+		
 		//Stamping onto BG Layer:
 		[Embed(source = 'backgrounds/BGStamp/Smile100X100.PNG')]      public static var STAMP_SMILE       :Class;
 		
 		//Background Images:
 		[Embed(source = 'backgrounds/Vamp.PNG')]      public static var BG_VAMP       :Class;
 		[Embed(source = 'backgrounds/NeetoFrac.png')]      public static var BG_NEETOFRAC       :Class;
+		
+		//The auto tile strip used with the pattern packs, it is the texture used to render our auto-generated backgrounds:
+		[Embed(source = 'tiles/strips/BG01_AUTO_TILE_STRIP.png')]      public static var BG01_AUTO_TILE_STRIP       :Class;
+		[Embed(source = 'tiles/strips/BG02_AUTO_TILE_STRIP.png')]      public static var BG02_AUTO_TILE_STRIP       :Class;
+		[Embed(source = 'tiles/strips/BG03_AUTO_TILE_STRIP.png')]      public static var BG03_AUTO_TILE_STRIP       :Class;
+		
+		//For creating DYNAMIC background images. The other imports are probably... Wasted space now.
+		[Embed(source = 'backgrounds/BGPatternPacks/BG_PATTERN_PACK_01.png')]      public static var BG_PATTERN_PACK_01       :Class;
+		[Embed(source = 'backgrounds/BGPatternPacks/BG_PATTERN_PACK_02.png')]      public static var BG_PATTERN_PACK_02       :Class;
+		[Embed(source = 'backgrounds/BGPatternPacks/BG_PATTERN_PACK_03.png')]      public static var BG_PATTERN_PACK_03       :Class;
+		[Embed(source = 'backgrounds/BGPatternPacks/BG_PATTERN_PACK_04.png')]      public static var BG_PATTERN_PACK_04       :Class;
+		[Embed(source = 'backgrounds/BGPatternPacks/BG_PATTERN_PACK_05.png')]      public static var BG_PATTERN_PACK_05       :Class;
+		[Embed(source = 'backgrounds/BGPatternPacks/BG_PATTERN_PACK_06.png')]      public static var BG_PATTERN_PACK_06       :Class;
+		
 		
 		//Flare Boxes:
 		[Embed(source = 'sprites/FlareBox/FBoxes.png')]      public static var FBOX_SHEET       :Class;
@@ -106,6 +126,26 @@ package assets.makeChoice
 		
 		public static var expTilePack:ExplosionTileSetPack = new ExplosionTileSetPack();
 		
+		
+		//embedding lighting presets:
+		[Embed(source = 'json/lightPresets/SuperFogOWar.json'                , mimeType = "application/octet-stream")]public static var  JLIGHT_SuperFogOWar           :Class;
+		[Embed(source = 'json/lightPresets/SubtleStartLightDark.json'        , mimeType = "application/octet-stream")]public static var  JLIGHT_SubtleStartLightDark   :Class;
+		
+		[Embed(source = 'json/lightPresets/SubtleStartLight.json'        , mimeType = "application/octet-stream")]public static var  JLIGHT_SubtleStartLight       :Class;
+		[Embed(source = 'json/lightPresets/AddedDarknessByContrast.json' , mimeType = "application/octet-stream")]public static var  JLIGHT_AddedDarknessByContrast:Class;
+		[Embed(source = 'json/lightPresets/BlueJetsAndGreenBG.json'   , mimeType = "application/octet-stream")]public static var  JLIGHT_BlueJetsAndGreenBG   :Class;
+		[Embed(source = 'json/lightPresets/CreeperDark.json'          , mimeType = "application/octet-stream")]public static var  JLIGHT_CreeperDark          :Class;
+		[Embed(source = 'json/lightPresets/DangerousDarkHaze.json'    , mimeType = "application/octet-stream")]public static var  JLIGHT_DangerousDarkHaze    :Class;
+		[Embed(source = 'json/lightPresets/FoggyProblems.json'        , mimeType = "application/octet-stream")]public static var  JLIGHT_FoggyProblems        :Class;
+		[Embed(source = 'json/lightPresets/GhostyStrobe.json'         , mimeType = "application/octet-stream")]public static var  JLIGHT_GhostyStrobe         :Class;
+		[Embed(source = 'json/lightPresets/MintLightRedBG.json'       , mimeType = "application/octet-stream")]public static var  JLIGHT_MintLightRedBG       :Class;
+		[Embed(source = 'json/lightPresets/NeonDerthal.json'          , mimeType = "application/octet-stream")]public static var  JLIGHT_NeonDerthal          :Class;
+		[Embed(source = 'json/lightPresets/SupaGreenWDarkGreenBG.json', mimeType = "application/octet-stream")]public static var  JLIGHT_SupaGreenWDarkGreenBG:Class;
+		[Embed(source = 'json/lightPresets/SuperBluePlasma.json'      , mimeType = "application/octet-stream")]public static var  JLIGHT_SuperBluePlasma      :Class;
+		[Embed(source = 'json/lightPresets/SuperGlowBombsGBG.json'    , mimeType = "application/octet-stream")]public static var  JLIGHT_SuperGlowBombsGBG    :Class;
+		[Embed(source = 'json/lightPresets/LightFriendlyFogOfWar.json'    , mimeType = "application/octet-stream")]public static var  JLIGHT_LightFriendlyFogOfWar    :Class;
+		//
+
 		//helper shorthand vars.
 		private static var m:Function;
 		private static var w:int = TILE_WIDTH;
