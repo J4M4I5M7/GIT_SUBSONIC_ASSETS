@@ -13,18 +13,74 @@ package assets.makeChoice
 		private static var TILE_WIDTH:int = 16;
 		private static var TILE_HEIGHT:int = 16;
 		
+		//The door used in the spacer levels. The door that takes 1 orb to unlock to get to the next level.
+		[Embed(source = "sprites/atomicDoor/ATOMIC_DOOR_BASE.png")] public static var ATOMIC_DOOR_BASE:Class;
+		
+		//The 2x2 doors:
+		[Embed(source = "sprites/START_DOOR_2X2.png")] public static var START_DOOR_2X2:Class;
+		[Embed(source = "sprites/EXIT_DOOR_2X2.png")] public static var EXIT_DOOR_2X2:Class;
+		
+		///REMOVED ASSETS://///////////////////////////////////////////////////////////////////////////////////////////////////
+		//UI Assets:
+		//[Embed(source = 'ui/TopLogoButton.png')]      public static var TOPLOGO_BUTTON       :Class;
+		//[Embed(source = 'ui/BotLogoButton.png')]      public static var BOTLOGO_BUTTON       :Class;
+		//[Embed(source = 'ui/VerticalUIBaseBoard.png')]      public static var VUI_BASEBOARD       :Class;
+		//[Embed(source = 'ui/VerticalUIBaseBoard_LITUP.png')]      public static var VUI_BASEBOARD_LITUP       :Class;
+		
+		//Stamping onto BG Layer:
+		//[Embed(source = 'backgrounds/BGStamp/Smile100X100.PNG')]      public static var STAMP_SMILE       :Class;
+		
+		//Background Images:
+		//[Embed(source = 'backgrounds/Vamp.PNG')]      public static var BG_VAMP       :Class;
+		//[Embed(source = 'backgrounds/NeetoFrac.png')]      public static var BG_NEETOFRAC       :Class;
+		
+		//The big guy I was thinking about making a stalker that chases you:
+		//[Embed(source = "sprites/spacemanStrip.png")] public static var ImgSpacemanLarge:Class;
+		
+		//ADDED: 2013.09.22:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+		//The DECAL MASKING TileSet that accompanies auto_tiles, auto_plats, and auto_angles.
+		//Used to make blood stain decals in environment look more well integrated into the tilemap they are stamped on.
+		//[Embed(source = 'tiles/DECALMASK_auto_tiles.png' )]public static var DECALMASK_auto_tiles:Class;
+		//[Embed(source = 'tiles/DECALMASK_auto_plats.png' )]public static var DECALMASK_auto_plats:Class;
+		//[Embed(source = 'tiles/DECALMASK_auto_angles.png')]public static var DECALMASK_auto_angles:Class;
+		//::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+		///REMOVED ASSETS://///////////////////////////////////////////////////////////////////////////////////////////////////
+		
+		
+		//The tester list for this game. Just user names seperated by newlines in a text file.
+		//Leave it up to the menu to create URLs from this data.
+		[Embed(source = 'text/TESTER_LIST.TXT', mimeType = "application/octet-stream")]public static var TESTER_LIST :Class;
+		
 		//the SNES cart icon that is used to create animated gif in game:
 		[Embed(source = 'ui/SNES_CART.PNG')]      public static var SNES_CART       :Class;
 		
 		//Alice's explosion animation!!!
 		[Embed(source = 'sprites/AliceExplodes.PNG')]      public static var ALICE_EXPLODES       :Class;
 		
-		//Stamping onto BG Layer:
-		[Embed(source = 'backgrounds/BGStamp/Smile100X100.PNG')]      public static var STAMP_SMILE       :Class;
+		//the orbs that revolve around alice:
+		///////////////////////////////////////////////////////////////////////////////////////////////////////////////
+		[Embed(source = 'sprites/orbs/TINY_ORB_DIFFUSE.png')] public static var TINY_ORB_DIFFUSE       :Class;
+		[Embed(source = 'sprites/orbs/TINY_ORB_LUMEN.png')]   public static var TINY_ORB_LUMEN         :Class;
+		[Embed(source = 'sprites/orbs/TINY_ORB_PLASMA.png')]  public static var TINY_ORB_PLASMA        :Class;
+		                                                       
+		[Embed(source = 'sprites/orbs/TINY_BROKEN_ORB_DIFFUSE.png')] public static var TINY_BROKEN_ORB_DIFFUSE:Class;
+		[Embed(source = 'sprites/orbs/TINY_BROKEN_ORB_LUMEN.png')]   public static var TINY_BROKEN_ORB_LUMEN  :Class;
+		[Embed(source = 'sprites/orbs/TINY_BROKEN_ORB_PLASMA.png')]  public static var TINY_BROKEN_ORB_PLASMA :Class;
+		                                                       
+		[Embed(source = 'sprites/orbs/BIG_ORB_DIFFUSE.png')] public static var BIG_ORB_DIFFUSE        :Class;
+		[Embed(source = 'sprites/orbs/BIG_ORB_LUMEN.png')]   public static var BIG_ORB_LUMEN          :Class;
+		[Embed(source = 'sprites/orbs/BIG_ORB_PLASMA.png')]  public static var BIG_ORB_PLASMA         :Class;
+		////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 		
-		//Background Images:
-		[Embed(source = 'backgrounds/Vamp.PNG')]      public static var BG_VAMP       :Class;
-		[Embed(source = 'backgrounds/NeetoFrac.png')]      public static var BG_NEETOFRAC       :Class;
+		//Banners to confirm if you have won or lost when in the spacer levels:
+		[Embed(source = 'propaganda/ALICE_BANNER_WIN.png')]    public static var ALICE_BANNER_WIN:Class;
+		[Embed(source = 'propaganda/ALICE_BANNER_LOSE.png')]  public static var ALICE_BANNER_LOSE:Class;
+		
+		
+		//The source bitmaps used to aid in rogue-like map generation.
+		//The "Auto-module" source.
+		[Embed(source = 'tiles/autoModuleSource/AUTO_MODULE_SOURCE_BM_01.png')] public static var AUTO_MODULE_SOURCE_BM_01:Class;
+		[Embed(source = 'tiles/autoModuleSource/AUTO_MODULE_SOURCE_BM_02.png')] public static var AUTO_MODULE_SOURCE_BM_02:Class;
 		
 		//The auto tile strip used with the pattern packs, it is the texture used to render our auto-generated backgrounds:
 		[Embed(source = 'tiles/strips/BG01_AUTO_TILE_STRIP.png')]      public static var BG01_AUTO_TILE_STRIP       :Class;
@@ -43,11 +99,7 @@ package assets.makeChoice
 		//Flare Boxes:
 		[Embed(source = 'sprites/FlareBox/FBoxes.png')]      public static var FBOX_SHEET       :Class;
 		
-		//UI Assets:
-		[Embed(source = 'ui/TopLogoButton.png')]      public static var TOPLOGO_BUTTON       :Class;
-		[Embed(source = 'ui/BotLogoButton.png')]      public static var BOTLOGO_BUTTON       :Class;
-		[Embed(source = 'ui/VerticalUIBaseBoard.png')]      public static var VUI_BASEBOARD       :Class;
-		[Embed(source = 'ui/VerticalUIBaseBoard_LITUP.png')]      public static var VUI_BASEBOARD_LITUP       :Class;
+		
 		
 		//Sound FX assets:
 		[Embed(source = 'sound/SFX/FreeSFXco/glass_headlight_of_a_car_being_smashed.mp3')]      public static var S_GLASS_BREAK_SFX       :Class;
@@ -73,7 +125,7 @@ package assets.makeChoice
 		
 		//Player and enemy sprites:
 		[Embed(source = "sprites/spaceman.png")]      public static var ImgSpaceman:Class;
-		[Embed(source = "sprites/spacemanStrip.png")] public static var ImgSpacemanLarge:Class;
+	
 		
 		
 		// Tileset that works with AUTO mode (best for thin walls) mmmmmmmmmmmm
@@ -81,13 +133,12 @@ package assets.makeChoice
 		[Embed(source = 'tiles/auto_plats.png' )]public static var auto_plats:Class;
 		[Embed(source = 'tiles/auto_angles.png')]public static var auto_angles:Class;
 		
-		//ADDED: 2013.09.22:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-		//The DECAL MASKING TileSet that accompanies auto_tiles, auto_plats, and auto_angles.
-		//Used to make blood stain decals in environment look more well integrated into the tilemap they are stamped on.
-		[Embed(source = 'tiles/DECALMASK_auto_tiles.png' )]public static var DECALMASK_auto_tiles:Class;
-		[Embed(source = 'tiles/DECALMASK_auto_plats.png' )]public static var DECALMASK_auto_plats:Class;
-		[Embed(source = 'tiles/DECALMASK_auto_angles.png')]public static var DECALMASK_auto_angles:Class;
-		//::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+		//Tileset that is used in the spacer levels:
+		[Embed(source = 'tiles/space/SPACE_BLOCKS.png' )]public static var SPACE_BLOCKS:Class;
+		[Embed(source = 'tiles/space/SPACE_PLATS.png'  )]public static var SPACE_PLATS :Class;
+		[Embed(source = 'tiles/space/SPACE_ANGLES.png' )]public static var SPACE_ANGLES:Class;
+		
+
 		
 		//Tileset that is used for the bomberman style explosions:
 		[Embed(source = 'tiles/bomberManExplosionTiles.png')]public static var explosionTiles :Class;//environment bombs.
@@ -128,9 +179,11 @@ package assets.makeChoice
 		
 		
 		//embedding lighting presets:
+		[Embed(source = 'json/lightPresets/SPACER_NT_COOL_GREY_STEEL.json'    , mimeType = "application/octet-stream")]public static var SPACER_NT_COOL_GREY_STEEL  :Class;
+		[Embed(source = 'json/lightPresets/SPACER_RED_BLUE_GRAPH_PAPER.json'  , mimeType = "application/octet-stream")]public static var SPACER_RED_BLUE_GRAPH_PAPER:Class;
+		
 		[Embed(source = 'json/lightPresets/SuperFogOWar.json'                , mimeType = "application/octet-stream")]public static var  JLIGHT_SuperFogOWar           :Class;
 		[Embed(source = 'json/lightPresets/SubtleStartLightDark.json'        , mimeType = "application/octet-stream")]public static var  JLIGHT_SubtleStartLightDark   :Class;
-		
 		[Embed(source = 'json/lightPresets/SubtleStartLight.json'        , mimeType = "application/octet-stream")]public static var  JLIGHT_SubtleStartLight       :Class;
 		[Embed(source = 'json/lightPresets/AddedDarknessByContrast.json' , mimeType = "application/octet-stream")]public static var  JLIGHT_AddedDarknessByContrast:Class;
 		[Embed(source = 'json/lightPresets/BlueJetsAndGreenBG.json'   , mimeType = "application/octet-stream")]public static var  JLIGHT_BlueJetsAndGreenBG   :Class;

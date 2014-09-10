@@ -22,6 +22,7 @@
    },
    "DRAWORDER" : {
       "LAYERORDER" : [
+         "MISC_SPRITES_LAYER",
          "TILE_MAP_LAYER",
          "BUTTONS_LAYER",
          "PLASMALIGHT_LAYER",
@@ -29,6 +30,7 @@
          "LUMENLIGHT_LAYER",
          "BOMB_EXPLOSIONFIRE_LAYER",
          "PLAYER_LAYER"
+         
       ]
    },
    "TILEMAPDATA" : {

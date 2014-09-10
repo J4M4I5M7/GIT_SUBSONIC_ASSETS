@@ -1,0 +1,12 @@
+These are the orbs that revolve around you.
+You can have up to 6.
+Why 6? Close to candy crush's 5 moves, but
+allows for a symmetrical pattern when you are completely full.
+A hebrew star rather than a pentagram.
+Design wise, I like the symmetry.
+
+
+Tiny Orb: Revolves around you.
+Tiny Crack Orb: When you die, one of your orbs cracks and is destroyed.
+Big Orb: If you get more than 6 orbs, the 7th turns into a larger glowing orb.
+This larger glowing orb gets you a special trophy when you put it into the exit door.

@@ -7,6 +7,7 @@ package config.releaseModes{
 	import JM_LIB.collections.bmDict.IndexedBitmapDictionary;
 	import JM_LIB.configTypes.mData4LevelPacks.MetaDataForPNGLevelPacks;
 	import JM_LIB.configTypes.basicRegData.BasicRegData;
+	import JM_LIB.helperTypes.GameMapDataHolder;
 	
 	//Different configurations of game will be different extentions of GameReleaseMode.
 	//AssetSwitchBoard will use one of them.
@@ -15,7 +16,8 @@ package config.releaseModes{
 	{
 		/** A packages that stores all of the PNG maps that make up our level maps.
 		 *  Package could be extracted further to contain meta-data for each level. **/
-		public var mapData:LevelRegHelper;
+		//public var mapData:LevelRegHelper;
+		public var mapData:GameMapDataHolder; //<<Refactored so we have a slot for [spacer level packs] and [main level packs]
 		
 		/*
 		/## Decals are not treated like normal assets because of the way they are loaded into the game.

@@ -16,7 +16,7 @@ package music.makeChoice
 		//[Embed(source = "mp3/creepyloadingmusic.mp3")] 	public static var Rave:Class;
 		
 		//Tyler's FlatFoot:
-		[Embed(source="mp3/Ravey03.mp3")] 	public static var Rave:Class;
+		[Embed(source="mp3/Squirrelattempt2_song02.mp3")] 	public static var Rave:Class;
 		
 	}//class
 }//package

@@ -1,1 +1,35 @@
-{"BGCOLOR":{"a":115,"r":0,"g":0,"b":0},"DARKPLASMA":{"a":64,"r":0,"g":0,"b":0,"blendMode":"lighten"},"DARKLUMEN":{"a":125,"r":0,"g":0,"b":16,"blendMode":"add"},"DRAWORDER":{"LAYERORDER":["LUMENLIGHT_LAYER","TILE_MAP_LAYER","BOMB_BOMBSPRITE_LAYER","PLASMALIGHT_LAYER","BUTTONS_LAYER","BOMB_EXPLOSIONFIRE_LAYER","PLAYER_LAYER"]}}
+{
+   "BGCOLOR" : {
+      "a" : 115,
+      "b" : 0,
+      "g" : 0,
+      "r" : 0
+   },
+   "DARKLUMEN" : {
+      "a" : 125,
+      "b" : 16,
+      "blendMode" : "add",
+      "g" : 0,
+      "r" : 0
+   },
+   "DARKPLASMA" : {
+      "a" : 64,
+      "b" : 0,
+      "blendMode" : "lighten",
+      "g" : 0,
+      "r" : 0
+   },
+   "DRAWORDER" : {
+      "LAYERORDER" : [
+         "LUMENLIGHT_LAYER",
+         "MISC_SPRITES_LAYER",
+         "TILE_MAP_LAYER",
+         "BOMB_BOMBSPRITE_LAYER",
+         "PLASMALIGHT_LAYER",
+         "BUTTONS_LAYER",
+         "BOMB_EXPLOSIONFIRE_LAYER",
+         "PLAYER_LAYER"
+         
+      ]
+   }
+}

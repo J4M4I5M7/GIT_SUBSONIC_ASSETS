@@ -1,10 +1,20 @@
 package maps.makeChoice{
 	import JM_LIB.helperTypes.LevelRegHelper;
+	import JM_LIB.helperTypes.GameMapDataHolder;
 	import JM_GAME_LIBS.flixelBasedGames.subSonicShock.config.levelConfig.MakeChoiceLevelDescriptionInjector;
 	import JM_LIB.constants.GameDifficultyModes;
 	
-	public class MiniGameLevelPack extends LevelRegHelper
+	public class MiniGameLevelPack extends GameMapDataHolder //LevelRegHelper
 	{
+		
+		//embedding of spacer levels:
+		[Embed(source = 'SPACE/DEFAULT/spaceMap00.PNG')]private static var spaceMap00:Class;
+		[Embed(source = 'SPACE/I/spaceMap00I.PNG')]private static var spaceMap00I:Class;
+		[Embed(source = 'SPACE/E/spaceMap00E.PNG')]private static var spaceMap00E:Class;
+		[Embed(source = 'SPACE/P/spaceMap00P.PNG')]private static var spaceMap00P:Class;
+		[Embed(source = 'SPACE/H/spaceMap00H.PNG')]private static var spaceMap00H:Class;
+		[Embed(source = 'SPACE/T/spaceMap00T.PNG')]private static var spaceMap00T:Class;
+		
 		///--/// Embedd Tags: ///--///
 		//Auto-Generated Embedd Tags Start:
 		//tags for level pack: E
@@ -151,91 +161,118 @@ package maps.makeChoice{
 		
 		public function MiniGameLevelPack():void
 		{
+			mainMapData   = new LevelRegHelper();
+			spacerMapData = new LevelRegHelper();
+			
+			var m:LevelRegHelper = mainMapData;
+			var s:LevelRegHelper = spacerMapData;
+			
+			//TEST: for a test to get spacer levels working, just use levels already embedded into the game:
+			///SPACER TEST --- SPACER TEST --- SPACER TEST --- SPACER TEST --- SPACER TEST --- SPACER TEST --- ///
+			s.setDifficultyMode(GameDifficultyModes.DIFFICULTY_EASY, true);
+			s.pushLevel("levelMap00E", spaceMap00E);
+			
+			s.setDifficultyMode(GameDifficultyModes.DIFFICULTY_PUZZLEHARD, true);
+			s.pushLevel("spaceMap00P", spaceMap00P);
+			
+			s.setDifficultyMode(GameDifficultyModes.DIFFICULTY_DEFAULT, true);
+			s.pushLevel("spaceMap00", spaceMap00);
+			
+			s.setDifficultyMode(GameDifficultyModes.DIFFICULTY_HELL, true);
+			s.pushLevel("spaceMap00H", spaceMap00H);
+			
+			s.setDifficultyMode(GameDifficultyModes.DIFFICULTY_INTROSTAGES, true);
+			s.pushLevel("spaceMap00I", spaceMap00I);
+			
+			s.setDifficultyMode(GameDifficultyModes.DIFFICULTY_TWITCHHARD, true);
+			s.pushLevel("spaceMap00T", spaceMap00T);
+			///SPACER TEST --- SPACER TEST --- SPACER TEST --- SPACER TEST --- SPACER TEST --- SPACER TEST --- ///
+			
 			///--///Push Code: ///--///
 			//Auto-Generated Push-Level-Code Start:
 			//tags for level pack: E
-			this.setDifficultyMode(GameDifficultyModes.DIFFICULTY_EASY, true);
-			this.pushLevel("levelMap00E", levelMap00E);
-			this.pushLevel("levelMap01E", levelMap01E);
-			this.pushLevel("levelMap02E", levelMap02E);
-			this.pushLevel("levelMap03E", levelMap03E);
-			this.pushLevel("levelMap16E", levelMap16E);
-			this.pushLevel("levelMap17E", levelMap17E);
-			this.pushLevel("levelMap18E", levelMap18E);
-			this.pushLevel("levelMap19E", levelMap19E);
-			this.pushLevel("levelMap21E", levelMap21E);
-			this.pushLevel("levelMap23E", levelMap23E);
-			this.pushLevel("levelMap24E", levelMap24E);
-			this.pushLevel("levelMap25E", levelMap25E);
-			this.pushLevel("levelMap26E", levelMap26E);
-			this.pushLevel("levelMap31E", levelMap31E);
-			this.pushLevel("levelMap32E", levelMap32E);
-			this.pushLevel("levelMap33E", levelMap33E);
+			m.setDifficultyMode(GameDifficultyModes.DIFFICULTY_EASY, true);
+			m.pushLevel("levelMap00E", levelMap00E);
+			m.pushLevel("levelMap01E", levelMap01E);
+			m.pushLevel("levelMap02E", levelMap02E);
+			m.pushLevel("levelMap03E", levelMap03E);
+			m.pushLevel("levelMap16E", levelMap16E);
+			m.pushLevel("levelMap17E", levelMap17E);
+			m.pushLevel("levelMap18E", levelMap18E);
+			m.pushLevel("levelMap19E", levelMap19E);
+			m.pushLevel("levelMap21E", levelMap21E);
+			m.pushLevel("levelMap23E", levelMap23E);
+			m.pushLevel("levelMap24E", levelMap24E);
+			m.pushLevel("levelMap25E", levelMap25E);
+			m.pushLevel("levelMap26E", levelMap26E);
+			m.pushLevel("levelMap31E", levelMap31E);
+			m.pushLevel("levelMap32E", levelMap32E);
+			m.pushLevel("levelMap33E", levelMap33E);
 			
 			//tags for level pack: P
-			this.setDifficultyMode(GameDifficultyModes.DIFFICULTY_PUZZLEHARD, true);
-			this.pushLevel("levelMap01P", levelMap01P);
-			this.pushLevel("levelMap02P", levelMap02P);
-			this.pushLevel("levelMap03P", levelMap03P);
-			this.pushLevel("levelMap04P", levelMap04P);
-			this.pushLevel("levelMap05P", levelMap05P);
-			this.pushLevel("levelMap06P", levelMap06P);
-			this.pushLevel("levelMap07P", levelMap07P);
-			this.pushLevel("levelMap08P", levelMap08P);
-			this.pushLevel("levelMap09P", levelMap09P);
-			this.pushLevel("levelMap10P", levelMap10P);
-			this.pushLevel("levelMap11P", levelMap11P);
-			this.pushLevel("levelMap12P", levelMap12P);
-			this.pushLevel("levelMap13P", levelMap13P);
-			this.pushLevel("levelMap14P", levelMap14P);
-			this.pushLevel("levelMap15P", levelMap15P);
-			this.pushLevel("levelMap16P", levelMap16P);
-			this.pushLevel("levelMap17P", levelMap17P);
-			this.pushLevel("levelMap18P", levelMap18P);
-			this.pushLevel("levelMap19P", levelMap19P);
-			this.pushLevel("levelMap20P", levelMap20P);
-			this.pushLevel("levelMap21P", levelMap21P);
-			this.pushLevel("levelMap22P", levelMap22P);
-			this.pushLevel("levelMap23P", levelMap23P);
-			this.pushLevel("levelMap24P", levelMap24P);
-			this.pushLevel("levelMap25P", levelMap25P);
-			this.pushLevel("levelMap26P", levelMap26P);
-			this.pushLevel("levelMap27P", levelMap27P);
-			this.pushLevel("levelMap28P", levelMap28P);
+			m.setDifficultyMode(GameDifficultyModes.DIFFICULTY_PUZZLEHARD, true);
+			m.pushLevel("levelMap01P", levelMap01P);
+			m.pushLevel("levelMap02P", levelMap02P);
+			m.pushLevel("levelMap03P", levelMap03P);
+			m.pushLevel("levelMap04P", levelMap04P);
+			m.pushLevel("levelMap05P", levelMap05P);
+			m.pushLevel("levelMap06P", levelMap06P);
+			m.pushLevel("levelMap07P", levelMap07P);
+			m.pushLevel("levelMap08P", levelMap08P);
+			m.pushLevel("levelMap09P", levelMap09P);
+			m.pushLevel("levelMap10P", levelMap10P);
+			m.pushLevel("levelMap11P", levelMap11P);
+			m.pushLevel("levelMap12P", levelMap12P);
+			m.pushLevel("levelMap13P", levelMap13P);
+			m.pushLevel("levelMap14P", levelMap14P);
+			m.pushLevel("levelMap15P", levelMap15P);
+			m.pushLevel("levelMap16P", levelMap16P);
+			m.pushLevel("levelMap17P", levelMap17P);
+			m.pushLevel("levelMap18P", levelMap18P);
+			m.pushLevel("levelMap19P", levelMap19P);
+			m.pushLevel("levelMap20P", levelMap20P);
+			m.pushLevel("levelMap21P", levelMap21P);
+			m.pushLevel("levelMap22P", levelMap22P);
+			m.pushLevel("levelMap23P", levelMap23P);
+			m.pushLevel("levelMap24P", levelMap24P);
+			m.pushLevel("levelMap25P", levelMap25P);
+			m.pushLevel("levelMap26P", levelMap26P);
+			m.pushLevel("levelMap27P", levelMap27P);
+			m.pushLevel("levelMap28P", levelMap28P);
 			
 			//tags for level pack: 
 			
-			this.setDifficultyMode(GameDifficultyModes.DIFFICULTY_DEFAULT, true);
-			this.pushLevel("levelMap00", levelMap00);
-			this.pushLevel("levelMap01", levelMap01);
-			this.pushLevel("levelMap02", levelMap02);
-			this.pushLevel("levelMap03", levelMap03);
-			this.pushLevel("levelMap04", levelMap04);
-			this.pushLevel("levelMap05", levelMap05);
-			this.pushLevel("levelMap06", levelMap06);
-			this.pushLevel("levelMap07", levelMap07);
-			this.pushLevel("levelMap08", levelMap08);
-			this.pushLevel("levelMap09", levelMap09);
-			this.pushLevel("levelMap10", levelMap10);
-			this.pushLevel("levelMap11", levelMap11);
-			this.pushLevel("levelMap12", levelMap12);
-			this.pushLevel("levelMap13", levelMap13);
-			this.pushLevel("levelMap14", levelMap14);
-			this.pushLevel("levelMap15", levelMap15);
-			this.pushLevel("levelMap16", levelMap16);
-			this.pushLevel("levelMap17", levelMap17);
-			this.pushLevel("levelMap18", levelMap18);
-			this.pushLevel("levelMap19", levelMap19);
-			this.pushLevel("levelMap20", levelMap20);
-			this.pushLevel("levelMap21", levelMap21);
-			this.pushLevel("levelMap22", levelMap22);
-			this.pushLevel("levelMap23", levelMap23);
-			this.pushLevel("levelMap24", levelMap24);
-			this.pushLevel("levelMap25", levelMap25);
-			this.pushLevel("levelMap26", levelMap26);
-			this.pushLevel("levelMap27", levelMap27);
-			this.pushLevel("levelMap28", levelMap28);
-			this.pushLevel("levelMap29", levelMap29);
+			m.setDifficultyMode(GameDifficultyModes.DIFFICULTY_DEFAULT, true);
+			m.pushLevel("levelMap00", levelMap00);
+			m.pushLevel("levelMap01", levelMap01);
+			m.pushLevel("levelMap02", levelMap02);
+			m.pushLevel("levelMap03", levelMap03);
+			m.pushLevel("levelMap04", levelMap04);
+			m.pushLevel("levelMap05", levelMap05);
+			m.pushLevel("levelMap06", levelMap06);
+			m.pushLevel("levelMap07", levelMap07);
+			m.pushLevel("levelMap08", levelMap08);
+			m.pushLevel("levelMap09", levelMap09);
+			m.pushLevel("levelMap10", levelMap10);
+			m.pushLevel("levelMap11", levelMap11);
+			m.pushLevel("levelMap12", levelMap12);
+			m.pushLevel("levelMap13", levelMap13);
+			m.pushLevel("levelMap14", levelMap14);
+			m.pushLevel("levelMap15", levelMap15);
+			m.pushLevel("levelMap16", levelMap16);
+			m.pushLevel("levelMap17", levelMap17);
+			m.pushLevel("levelMap18", levelMap18);
+			m.pushLevel("levelMap19", levelMap19);
+			m.pushLevel("levelMap20", levelMap20);
+			m.pushLevel("levelMap21", levelMap21);
+			m.pushLevel("levelMap22", levelMap22);
+			m.pushLevel("levelMap23", levelMap23);
+			m.pushLevel("levelMap24", levelMap24);
+			m.pushLevel("levelMap25", levelMap25);
+			m.pushLevel("levelMap26", levelMap26);
+			m.pushLevel("levelMap27", levelMap27);
+			m.pushLevel("levelMap28", levelMap28);
+			m.pushLevel("levelMap29", levelMap29);
 			
 			
 			
@@ -243,81 +280,81 @@ package maps.makeChoice{
 			 //* No more level design for Josh till level editor is made. Not his fault, it was a hackish
 			 //* way to make levels.
 			
-			this.pushLevel("levelMap30", levelMap30);
-			this.pushLevel("levelMap31", levelMap31);
-			this.pushLevel("levelMap32", levelMap32);
-			this.pushLevel("levelMap33", levelMap33);
-			this.pushLevel("levelMap34", levelMap34);
-			this.pushLevel("levelMap35", levelMap35);
-			this.pushLevel("levelMap36", levelMap36);
-			this.pushLevel("levelMap37", levelMap37);
-			this.pushLevel("levelMap38", levelMap38);
-			this.pushLevel("levelMap39", levelMap39);
-			this.pushLevel("levelMap40", levelMap40);
-			this.pushLevel("levelMap41", levelMap41);
-			this.pushLevel("levelMap42", levelMap42);
-			this.pushLevel("levelMap43", levelMap43);
-			this.pushLevel("levelMap44", levelMap44);
-			this.pushLevel("levelMap45", levelMap45);
-			this.pushLevel("levelMap46", levelMap46);
-			this.pushLevel("levelMap47", levelMap47);
-			this.pushLevel("levelMap48", levelMap48);
-			this.pushLevel("levelMap49", levelMap49);
-			this.pushLevel("levelMap50", levelMap50);
+			m.pushLevel("levelMap30", levelMap30);
+			m.pushLevel("levelMap31", levelMap31);
+			m.pushLevel("levelMap32", levelMap32);
+			m.pushLevel("levelMap33", levelMap33);
+			m.pushLevel("levelMap34", levelMap34);
+			m.pushLevel("levelMap35", levelMap35);
+			m.pushLevel("levelMap36", levelMap36);
+			m.pushLevel("levelMap37", levelMap37);
+			m.pushLevel("levelMap38", levelMap38);
+			m.pushLevel("levelMap39", levelMap39);
+			m.pushLevel("levelMap40", levelMap40);
+			m.pushLevel("levelMap41", levelMap41);
+			m.pushLevel("levelMap42", levelMap42);
+			m.pushLevel("levelMap43", levelMap43);
+			m.pushLevel("levelMap44", levelMap44);
+			m.pushLevel("levelMap45", levelMap45);
+			m.pushLevel("levelMap46", levelMap46);
+			m.pushLevel("levelMap47", levelMap47);
+			m.pushLevel("levelMap48", levelMap48);
+			m.pushLevel("levelMap49", levelMap49);
+			m.pushLevel("levelMap50", levelMap50);
 			
 			
 			
 			//tags for level pack: H
-			this.setDifficultyMode(GameDifficultyModes.DIFFICULTY_HELL, true);
-			this.pushLevel("levelMap00H", levelMap00H);
-			this.pushLevel("levelMap01H", levelMap01H);
-			this.pushLevel("levelMap02H", levelMap02H);
-			this.pushLevel("levelMap04H", levelMap04H);
-			this.pushLevel("levelMap05H", levelMap05H);
-			this.pushLevel("levelMap06H", levelMap06H);
-			this.pushLevel("levelMap08H", levelMap08H);
-			this.pushLevel("levelMap09H", levelMap09H);
-			this.pushLevel("levelMap10H", levelMap10H);
-			this.pushLevel("levelMap11H", levelMap11H);
-			this.pushLevel("levelMap12H", levelMap12H);
-			this.pushLevel("levelMap13H", levelMap13H);
-			this.pushLevel("levelMap14H", levelMap14H);
-			this.pushLevel("levelMap15H", levelMap15H);
-			this.pushLevel("levelMap17H", levelMap17H);
-			this.pushLevel("levelMap18H", levelMap18H);
-			this.pushLevel("levelMap19H", levelMap19H);
+			m.setDifficultyMode(GameDifficultyModes.DIFFICULTY_HELL, true);
+			m.pushLevel("levelMap00H", levelMap00H);
+			m.pushLevel("levelMap01H", levelMap01H);
+			m.pushLevel("levelMap02H", levelMap02H);
+			m.pushLevel("levelMap04H", levelMap04H);
+			m.pushLevel("levelMap05H", levelMap05H);
+			m.pushLevel("levelMap06H", levelMap06H);
+			m.pushLevel("levelMap08H", levelMap08H);
+			m.pushLevel("levelMap09H", levelMap09H);
+			m.pushLevel("levelMap10H", levelMap10H);
+			m.pushLevel("levelMap11H", levelMap11H);
+			m.pushLevel("levelMap12H", levelMap12H);
+			m.pushLevel("levelMap13H", levelMap13H);
+			m.pushLevel("levelMap14H", levelMap14H);
+			m.pushLevel("levelMap15H", levelMap15H);
+			m.pushLevel("levelMap17H", levelMap17H);
+			m.pushLevel("levelMap18H", levelMap18H);
+			m.pushLevel("levelMap19H", levelMap19H);
 			
 			//tags for level pack: I
-			this.setDifficultyMode(GameDifficultyModes.DIFFICULTY_INTROSTAGES, true);
-			this.pushLevel("levelMap00I", levelMap00I); //only push the first intro level in our editor version!
+			m.setDifficultyMode(GameDifficultyModes.DIFFICULTY_INTROSTAGES, true);
+			m.pushLevel("levelMap00I", levelMap00I); //only push the first intro level in our editor version!
 			
 			/*
-			this.pushLevel("levelMap01I", levelMap01I);
-			this.pushLevel("levelMap02I", levelMap02I);
-			this.pushLevel("levelMap03I", levelMap03I);
-			this.pushLevel("levelMap04I", levelMap04I);
-			this.pushLevel("levelMap05I", levelMap05I);
-			this.pushLevel("levelMap06I", levelMap06I);
+			m.pushLevel("levelMap01I", levelMap01I);
+			m.pushLevel("levelMap02I", levelMap02I);
+			m.pushLevel("levelMap03I", levelMap03I);
+			m.pushLevel("levelMap04I", levelMap04I);
+			m.pushLevel("levelMap05I", levelMap05I);
+			m.pushLevel("levelMap06I", levelMap06I);
 			*/
 			
 			//tags for level pack: T
-			this.setDifficultyMode(GameDifficultyModes.DIFFICULTY_TWITCHHARD, true);
-			this.pushLevel("levelMap01T", levelMap01T);
-			this.pushLevel("levelMap02T", levelMap02T);
-			this.pushLevel("levelMap03T", levelMap03T);
-			this.pushLevel("levelMap04T", levelMap04T);
-			this.pushLevel("levelMap05T", levelMap05T);
-			this.pushLevel("levelMap06T", levelMap06T);
-			this.pushLevel("levelMap07T", levelMap07T);
-			this.pushLevel("levelMap08T", levelMap08T);
-			this.pushLevel("levelMap09T", levelMap09T);
-			this.pushLevel("levelMap10T", levelMap10T);
-			this.pushLevel("levelMap11T", levelMap11T);
+			m.setDifficultyMode(GameDifficultyModes.DIFFICULTY_TWITCHHARD, true);
+			m.pushLevel("levelMap01T", levelMap01T);
+			m.pushLevel("levelMap02T", levelMap02T);
+			m.pushLevel("levelMap03T", levelMap03T);
+			m.pushLevel("levelMap04T", levelMap04T);
+			m.pushLevel("levelMap05T", levelMap05T);
+			m.pushLevel("levelMap06T", levelMap06T);
+			m.pushLevel("levelMap07T", levelMap07T);
+			m.pushLevel("levelMap08T", levelMap08T);
+			m.pushLevel("levelMap09T", levelMap09T);
+			m.pushLevel("levelMap10T", levelMap10T);
+			m.pushLevel("levelMap11T", levelMap11T);
 			
 			//meow meow.
 			//Add meta data for the level sets. This is description data only.
 			//Not save data.
-			MakeChoiceLevelDescriptionInjector.setupLevelPackDescriptions(this);
+			MakeChoiceLevelDescriptionInjector.setupLevelPackDescriptions(this.mainMapData);
 			
 		}//constructor function
 		
